@@ -1,0 +1,89 @@
+p{
+    color: blueviolet;
+}
+
+a{
+    color: blueviolet;
+}
+/*We can use the the above tags by using combined selectors as well by simply using comma between the two selectors like p,a{p:v};*/
+
+p,a{
+    color: blueviolet;
+}
+
+li{
+    list-style-type :square;
+}
+/*This changes format of all the lists which will be included in the current webpage.*/
+
+.special{
+    color: cadetblue;
+    font-weight: bold;
+}
+/*This is the syntax for class slection. Class i sused here for customization in css as this element is added in this class and so forth.*/
+
+em.special{
+    color: orange;
+    font-weight: bold;
+}
+/*This is for individual selection in the class*/
+
+ul em{
+    color: rebeccapurple;
+    font-weight: bold;
+}
+/*The above lines say ul ke andar ke joh em tags hai wo sab ye color change karenge*/
+
+h1+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*The above lines say h1 ke just aage wala joh p tag hai usme yeh changes karne hai. Maybe used for detailed address for the element which is to be changed.*/
+
+a:hover{
+    color: yellow;
+    font-size: medium;
+}
+/*In the above lines pseudo class selector is used. Pseudo class selector has few states such as hover, visited, link etc.*/
+
+body h1+p .special{
+    color: yellowgreen;
+    background-color: black;
+    padding: 5px;
+}
+/*The above lines just tells the browser the specific location where changes has to be done*/
+
+#heading{
+    color: crimson;
+    background-color: black;
+    padding: 5px;
+}
+
+h1+span{
+    color: blueviolet;
+    background-color: chartreuse;
+}
+/*For the inline use of the color schemes*/
+p#one{
+    color: crimson;
+}
+/*Similar as the use of the class*/
+
+li[class]{
+    color: black;
+}
+/*li ke andar jitne class hai utne select karne hai*/
+
+section li[class="a"]{
+    color: brown;
+}
+/*Section ke andar jitne li hai jiske class ki value a hai wo select karna hai*/
+
+section li[class ~="a"]{
+    background-color: coral;
+}
+/*This tells the browser to select the one which has value of class as "a" in common which is the case of unit 3 and unit 4*/
+
+*{
+    color: cyan;
+}
+/*This is the everything selector which selects every tag kind of things.*/

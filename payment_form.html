@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment form</title>
+  </head>
+  <body>
+    <form action="">
+      <!--Form is a tag which is used to tell the browser that it is a form. The Action attribute -->
+      <h1>Payment Form</h1>
+      <h2>Contact Details</h2>
+      <!--Two heading types are being used-->
+      <p>Required items are followed by *</p>
+      <p>Name: *<input type="text" name="Name" id="Name" required></p>
+      <!--Input tag makes the user input some data by making a dialogue box appear. It has an attribute called name = "Name" so the value we are entering will be stored inside the name like a variable.-->
+
+      <fieldset>
+        <legend>Gender</legend>
+        <p>
+          Male *<input type="radio" name="gender" id="male" required> Female
+          *<input type="radio" name="gender" id="female" required>
+        </p>
+      </fieldset>
+      <!--Fieldset is tag which makes a box appear for that respective element to be filled. And legend kind of works as a heading for that outlined dialogue box (created by fieldset)-->
+
+      <p>
+        Address: <textarea name="area" id="area" cols="100" rows="7"></textarea>
+      </p>
+      <!--textarea tag provides the user a huge input text space as it may be required for some inputs like address. Id works ig the same here as a variable cols and rows represent the width and height of the huge input text box-->
+
+      <p>Email: *<input type="email" name="email" id="email" required></p>
+      <!--Required make it compulsary for users to fill this particular element. input tag is similar being used here as earlier. It has type email which is specifically used for email inputs. -->
+
+      <p>Pincode: *<input type="number" name="pincode" id="pincode" required></p>
+      <!--input type Number is used to tell the browser the input is in the form of number-->
+      <hr>
+
+      <h2>Payment Information</h2>
+      
+      <p>
+        Card type:
+        <select name="card_type" id="card_type">
+          <option value="">--Select a card type---</option>
+          <option value="visa">Visa</option>
+          <option value="rupay">RuPay</option>
+          <option value="mastercard">MasterCard</option>
+        </select>
+      </p>
+      <!--Normal text of Card type is being displayed. Then select is used to choose among the following option kind of dialogue box to appear. After using select, we must use option tag. The input form any of the following actions (which the user will select) will be stored in card_type. Option value is kept NULL for --Select a card type-- becoz we dont want it to mean a thing other than the display purpose. VISA, ruplay and all must have value for the value attribute as they are the options inside the dialogue box -->
+
+      <p>Card Number: <input type="number" name="c_number" id="c_number"></p>
+      <!--Normal input tag is used with number as input type which will be stored in c_number-->
+      
+      <p>Expiration Date: <input type="date" name="exp_date" id="exp_date"></p>
+      <!--Type date is being used which browser knows what it actually means. DD/MM//YY-->
+      
+      <p>CVV: <input type="password" name="cvv" id="cvv"></p>
+      <!--Input type password is used to make the entered text hidden. Its for the privacy reasons.-->
+      
+      <input type="submit" value="Pay Now">
+      <!--Input type button is used to make a final button of pay now which will submit the final file. Similar text of Pay Now button is displayed.-->
+    
+    </form>
+  
+</body>
+</html>

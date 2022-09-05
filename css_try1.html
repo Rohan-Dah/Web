@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Head</title>
+    <link rel="stylesheet" href="css_try1.css">
+    <style>
+        h2{
+            color: brown;
+        }
+    </style>
+  </head>
+
+  <!--Ways to add CSS into html. 
+    Inline- By using style tag individually
+    Internal by creating style tag in the header and doing the needful
+    External Linking the css file by using the link tag in the head.
+-->
+  
+  <body>
+    <h1 style="color: blue;">&lt;h1&gt; Hello World &lt;&Backslash;h1&gt;</h1>
+    <!--In line 10 we used some entities which are a given set of code used to identify some symbol or letter or anything which may not be present on the keyboard.-->
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+    <p>
+      <b> ipsum dolor sit amet consectetur adipisicing elit.</b>
+      <i> accusamus quo, deserunt error facere tenetur quisquam,</i>
+      <br /><small>necessitatibus fuga numquam ipsam culpa ab,</small>
+      <big>quaerat maiores libero commodi mollitia at perspiciatis cum!</big>>
+    </p>
+    <!--We can get some rubbish display text for the current display use by using the keyword lorem-->
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+      aspernatur nihil debitis suscipit, rem iusto cupiditate necessitatibus
+      illo!<br />
+      Perferendis vel sit laborum quis quam aperiam natus quaerat maxime aliquam
+      nihil! 10 <sup>2</sup> 10 <sub>2</sub>
+    </p>
+
+    <hr />
+    <h2>Shopping List</h2>
+    <ul>
+      <li>Bread</li>
+      <li>Butter</li>
+      <li>Maggie</li>
+      <li>Jam</li>
+      <li>Ketchup</li>
+    </ul>
+
+    <hr />
+    <h2><b>Maggie Recipee</b></h2>
+    <ol type="I">
+      <li>Step 1:</li>
+      <li>Step 2:</li>
+      <li>Step 3: Nested List</li>
+      <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+      </ul>
+      <li>Step 4:</li>
+    </ol>
+
+    <hr />
+    <a href="https://www.google.com" target="_blank"> Google</a>
+    <br />
+    <a
+      href="../A being/Chapter Pdfs (Dark)/Chapter 0 (Dark).pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Chapter 1</a
+    >
+    <br />
+
+    <img src="images (1).png" alt="This is an image" width="350" />
+    <br />
+    <!--Br just takes you to the next line while hr draws a horizontal line in between-->
+    <video
+      src="../../Death Note/02 - Confrontation.mkv"
+      alt="This is a video"
+      width="400"
+      muted
+      controls
+      poster="/images (1).png"
+      autoplay
+      loop
+    ></video>
+    <!--Video tag works same as the image tag. SRC has the source location. The location has to be relative not absolute. Some attributes like width, muted, controls, poster, autoplay and loop is being used.
+      Width works the same for image as well as video.
+      Muted means your video will start muted in the webpage.
+      Controls will display the controls like play/pause, volume to the video.
+      Poster will work as a thumnail as it will take an src input which should be relative.
+      autoplay will make your video automatically play as the webpage is loaded.
+      Loop works as an unending video which will replay after the video is finished.  -->
+
+    <br />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/2QR11oDukn4"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <iframe
+      src="https://www.geeksforgeeks.org/how-to-align-text-in-html/"
+      frameborder="0"
+    ></iframe>
+    <!--iframe tag is used to embed videos or websites of different websites to display on our page.-->
+    <hr />
+
+    <table>
+    
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Practical</th>
+          <th>Theory</th>
+          <th>Total Marks</th>
+          <th>Grades</th>
+        </tr>
+      </thead>
+      <!--Table is a tag used to display a table as its name suggest. thead is a tag used to tell we will be using header for the table, th tag is used to highlight the text which will be written in it.
+      tr in particular says the data will included in a single row. Horizontal patti-->
+
+      <tbody>
+        <tr>
+          <td>English</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>A</td>
+        </tr>
+        <!--tbody is tag used to display body of the table as ofc its name suggest. tr here too is used to tell we will be stuffing the data in a single horizontal row, not vertical. td is used to display the data which is NOT highlighted that means ordinary display of data without bold.-->
+
+        <tr>
+          <td>Maths</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>A</td>
+        </tr>
+
+        <tr>
+          <td>Science</td>
+          <td>60</td>
+          <td>60</td>
+          <td>60</td>
+          <td>A+</td>
+        </tr>
+        
+        <tr>
+          <td>Art</td>
+          <td>90</td>
+          <td>90</td>
+          <td>90</td>
+          <td>B</td>
+        </tr>
+
+      <tfoot>
+        <tr>
+          <th colspan="5">Result : Pass</th>
+        </tr>
+      </tfoot>
+      <!--tfoot tells the browser that is the footer for the table and tr down below says the footer is displayed in horizontal way as in a row. th as it was earlier displays highlighted text.
+      Besided that in line 159 an attribute colspan is used which simply says merge these many columns. The Value we have written is 5 which means merge first 5 columns. We have a similar rowspan attribute which means merge these many rows and then display the text in center of them all -->
+
+      </tbody>  
+    
+    </table>
+  
+  
+  </body>
+</html>
+
+<!--The comment section
+Tags are the set of commands which tells the browser we want this in the form of this:
+Like some text we want in the form of header and some of it we want in the form of paragraph,
+so <h1>-<h6> and <p> are the tags used repectively
+
+Attributes is something which we use to define our tag even better better. Like we want this in this text.
+Like in list (line 34) we used attribute type with value as Roman which indicated we want to use the ordered list in capital Roman Numberss.
+
+Nesting of elements really turns out to be heavily cutomizable..
+
+Nesting of list is also done here in line 37. 
+
+In line 10 we used some entities which are a given set of code used to identify some symbol or letter or anything which may not be present on the keyboard.
+-->
